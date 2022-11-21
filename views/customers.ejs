@@ -1,0 +1,27 @@
+<%- include("partials/header") -%>
+<div class="box" id="heading">
+  <h1>Customers</h1>
+</div>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">S.no</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Balance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%users.forEach(function(user){%>
+      <tr>
+        <th scope="row"><%=user.id%></th>
+        <td><%=user.name%></td>
+        <td><%=user.email%></td>
+        <td><%=user.balance%></td>
+      </tr>
+    <%})%>
+  </tbody>
+</table>
+
+<%- include("partials/footer") -%>
