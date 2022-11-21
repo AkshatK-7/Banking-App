@@ -1,0 +1,6 @@
+Install npm
+express
+body-parser
+ejs
+mongodb
+mongoose
